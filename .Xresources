@@ -1,0 +1,40 @@
+! rxvt shiet
+!URxvt.meta8: true
+
+URxvt*termName: rxvt-unicode-256color
+
+URxvt*loginShell: true 
+
+URxvt.scrollBar: false
+URxvt*cursorBlink: true
+
+URxvt*background: black
+URxvt*foreground: white
+
+!URxvt*saveLines:  0 <-- bettr use tmux for this shiet
+URxvt*font: xft:Monospace:size=13:antialias=true
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+
+URxvt.perl-ext-common: default,matcher,tabbedex
+
+! clickable urls
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+
+! tab shit
+URxvt.tabbed.title:    true
+URxvt.tabbed.title-bg: 8
+URxvt.tabbed.title-fg: 7
+! Tabs: gray background, ~white text
+! and the opposite for the currently focused tab
+URxvt.tabbed.tabbar-fg: 7
+URxvt.tabbed.tabbar-bg: 8
+URxvt.tabbed.tab-fg:    8
+URxvt.tabbed.tab-bg:    7
+
+!URxvt.keysym.M-t: perl:tabbedex:new_tab
